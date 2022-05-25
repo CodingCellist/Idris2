@@ -3,46 +3,36 @@
 <head><title>Prelude.Interfaces</title>
   <meta charset="utf-8">
   <style>
-      .IdrisData {
-      
-      color: darkred
-    }
-    .IdrisType {
-      
-      color: blue
-    }
-    .IdrisBound {
-      
-      color: black
-    }
-    .IdrisFunction {
-      
-      color: darkgreen
-    }
-    .IdrisKeyword {
-      text-decoration: underline;
-      color: 
-    }
-    .IdrisImplicit {
-      
-      color: black
-    }
-    .IdrisComment {
-      
-      color: #b22222
-    }
-    .IdrisNamespace {
-      font-style: italic;
-      color: black
-    }
-    .IdrisPostulate {
-      font-weight: bold;
-      color: red
-    }
-    .IdrisModule {
-      font-style: italic;
-      color: black
-    }
+  .IdrisData {
+  color: darkred
+}
+.IdrisType {
+  color: blue
+}
+.IdrisBound {
+  color: black
+}
+.IdrisFunction {
+  color: darkgreen
+}
+.IdrisKeyword {
+  text-decoration: underline;
+}
+.IdrisComment {
+  color: #b22222
+}
+.IdrisNamespace {
+  font-style: italic;
+  color: black
+}
+.IdrisPostulate {
+  font-weight: bold;
+  color: red
+}
+.IdrisModule {
+  font-style: italic;
+  color: black
+}
 
   .IdrisLineNumber {
     text-decoration: none;
@@ -127,7 +117,7 @@
   </script>
 </head>
 <body onload="initialize()">
-<code>
+<code class="IdrisCode">
 <div id="line0"><a href="#line0" class="IdrisLineNumber"> &nbsp;&nbsp;0 | </a><span class="IdrisKeyword">module</span>&nbsp;<span class="IdrisModule">Prelude.Interfaces</span></div>
 <div id="line1"><a href="#line1" class="IdrisLineNumber"> &nbsp;&nbsp;1 | </a></div>
 <div id="line2"><a href="#line2" class="IdrisLineNumber"> &nbsp;&nbsp;2 | </a><span class="IdrisKeyword">import</span>&nbsp;<span class="IdrisModule">Builtin</span></div>
@@ -500,7 +490,7 @@
 <div id="line369"><a href="#line369" class="IdrisLineNumber"> 369 | </a><span class="IdrisFunction">any</span>&nbsp;<span class="IdrisKeyword">:</span>&nbsp;<span class="IdrisType">Foldable</span>&nbsp;<span class="IdrisBound">t</span>&nbsp;<span class="IdrisKeyword">=&gt;</span>&nbsp;<span class="IdrisKeyword">(</span><span class="IdrisBound">a</span>&nbsp;<span class="IdrisKeyword">-&gt;</span>&nbsp;<span class="IdrisType">Bool</span><span class="IdrisKeyword">)</span>&nbsp;<span class="IdrisKeyword">-&gt;</span>&nbsp;<span class="IdrisBound">t</span>&nbsp;<span class="IdrisBound">a</span>&nbsp;<span class="IdrisKeyword">-&gt;</span>&nbsp;<span class="IdrisType">Bool</span></div>
 <div id="line370"><a href="#line370" class="IdrisLineNumber"> 370 | </a><span class="IdrisFunction">any</span>&nbsp;<span class="IdrisKeyword">=</span>&nbsp;<span class="IdrisFunction">foldMap</span>&nbsp;<span class="IdrisKeyword">@{%search}</span>&nbsp;<span class="IdrisKeyword">@{</span><span class="IdrisFunction">Any</span><span class="IdrisKeyword">}</span></div>
 <div id="line371"><a href="#line371" class="IdrisLineNumber"> 371 | </a></div>
-<div id="line372"><a href="#line372" class="IdrisLineNumber"> 372 | </a><span class="IdrisComment">|||&nbsp;The&nbsp;disjunction&nbsp;of&nbsp;the&nbsp;collective&nbsp;results&nbsp;of&nbsp;applying&nbsp;a&nbsp;predicate&nbsp;to&nbsp;all</span></div>
+<div id="line372"><a href="#line372" class="IdrisLineNumber"> 372 | </a><span class="IdrisComment">|||&nbsp;The&nbsp;conjunction&nbsp;of&nbsp;the&nbsp;collective&nbsp;results&nbsp;of&nbsp;applying&nbsp;a&nbsp;predicate&nbsp;to&nbsp;all</span></div>
 <div id="line373"><a href="#line373" class="IdrisLineNumber"> 373 | </a><span class="IdrisComment">|||&nbsp;elements&nbsp;of&nbsp;a&nbsp;structure.&nbsp;&nbsp;`all`&nbsp;short-circuits&nbsp;from&nbsp;left&nbsp;to&nbsp;right.</span></div>
 <div id="line374"><a href="#line374" class="IdrisLineNumber"> 374 | </a><span class="IdrisKeyword">public</span>&nbsp;<span class="IdrisKeyword">export</span></div>
 <div id="line375"><a href="#line375" class="IdrisLineNumber"> 375 | </a><span class="IdrisFunction">all</span>&nbsp;<span class="IdrisKeyword">:</span>&nbsp;<span class="IdrisType">Foldable</span>&nbsp;<span class="IdrisBound">t</span>&nbsp;<span class="IdrisKeyword">=&gt;</span>&nbsp;<span class="IdrisKeyword">(</span><span class="IdrisBound">a</span>&nbsp;<span class="IdrisKeyword">-&gt;</span>&nbsp;<span class="IdrisType">Bool</span><span class="IdrisKeyword">)</span>&nbsp;<span class="IdrisKeyword">-&gt;</span>&nbsp;<span class="IdrisBound">t</span>&nbsp;<span class="IdrisBound">a</span>&nbsp;<span class="IdrisKeyword">-&gt;</span>&nbsp;<span class="IdrisType">Bool</span></div>
