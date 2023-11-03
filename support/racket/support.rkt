@@ -37,6 +37,20 @@
       (if (> b 0) (+ r b) (- r b))
       r)))
 
+
+; flonum constants
+
+;; /!\ This code trips the totality checker, even when it is never referenced in
+;; /!\ Idris2, but only on the file `libs/papers/Data/Description/Regular.idr`??
+
+(define (blodwen-flonumEpsilon)
+  epsilon.0)
+
+;; /!\ End of cursed code
+
+
+; Bits
+
 (define bu+ (lambda (x y bits) (blodwen-toUnsignedInt (+ x y) bits)))
 (define bu- (lambda (x y bits) (blodwen-toUnsignedInt (- x y) bits)))
 (define bu* (lambda (x y bits) (blodwen-toUnsignedInt (* x y) bits)))
